@@ -2,8 +2,17 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        heading: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        main: "#2563eb",
+        background: "#f8fafc",
+        cta: "#22c55e",
+      },
+    },
   },
   plugins: [],
-}
-
+};
