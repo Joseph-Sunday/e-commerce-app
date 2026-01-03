@@ -21,7 +21,7 @@
       class="bg-white rounded-lg shadow mt-3 overflow-hidden"
     >
       <div class="cursor-grab w-full rounded-lg shadow">
-        <img :src="c.image" :alt="c.name" class="w-full max-h-[155px]" />
+        <img :src="c.image" :alt="c.name" class="w-full h-[180px]" />
       </div>
     </SwiperSlide>
   </Swiper>

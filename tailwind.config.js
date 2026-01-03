@@ -11,6 +11,7 @@ export default {
         main: "#2563eb",
         background: "#f8fafc",
         cta: "#22c55e",
+        texts: "rgb(35, 35, 35)",
       },
     },
   },

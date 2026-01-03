@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-background pt-3 pb-1">
-    <div class="relative w-full px-2">
+  <div>
+    <div class="bg-background Hero-section pt-3">
+      <div class="relative w-full px-2">
       <IconsSearch
         class="text-gray-500 absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5"
       />
@@ -17,12 +18,71 @@
       </p>
     </div>
 
+    <section class="mb-3">
+      <HomeCarousel />
+    </section>
+    </div>
+    
+
     <section class="">
-      <Carousel />
+      <HomeSmallLinkCards :smallCard="smallCardDetails" />
     </section>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const smallCardDetails = [
+  {
+    id: 1,
+    title: "Awoof Deals",
+    image: "images/awoofDeals.png",
+  },
+  {
+    id: 2,
+    title: "Up to 80% Off",
+    image: "images/clearance.png",
+  },
+  {
+    id: 3,
+    title: "Awoof Deals",
+    image: "images/awoofDeals.png",
+  },
+  {
+    id: 4,
+    title: "Kids, Baby and More",
+    image: "images/kidsAndBabys.png",
+  },
+  {
+    id: 5,
+    title: "Unbeatable offers",
+    image: "images/twoForOne.png",
+  },
+  {
+    id: 6,
+    title: "Send Packages",
+    image: "images/delivery.png",
+  },
+  {
+    id: 7,
+    title: "Groceries",
+    image: "images/groceries.png",
+  },
+  {
+    id: 8,
+    title: "Deals Reloaded",
+    image: "images/gameSales.png",
+  },
+  {
+    id: 9,
+    title: "Unlock Your Deal",
+    image: "images/awoofDeals.png",
+  },
+  {
+    id: 10,
+    title: "Fulfilled By Jshop",
+    image: "images/powerbanks.png",
+  },
+];
+</script>
 
 <style scoped></style>
