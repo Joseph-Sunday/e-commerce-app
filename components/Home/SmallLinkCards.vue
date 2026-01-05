@@ -1,8 +1,12 @@
 <template>
   <div
-    class="bg-background flex justify-start items-center gap-3 mt-3 py-2 px-3 overflow-auto scroll-smooth no-scrollbar"
+    class="Small-Card-Section bg-background flex justify-start items-center gap-3 mt-3 py-2 px-3 overflow-auto scroll-smooth no-scrollbar"
   >
-    <div v-for="sc in smallCard" :key="sc.id" class="">
+    <div
+      v-for="sc in smallCard"
+      :key="sc.id"
+      class="flex flex-col justify-center items-center"
+    >
       <div>
         <img
           :src="sc.image"
@@ -11,7 +15,7 @@
         />
       </div>
       <div>
-        <p class="text-center text-gray-700 text-[13px] break">
+        <p class="text-center text-gray-700 text-[13px] truncate">
           {{ sc.title }}
         </p>
       </div>
@@ -20,13 +24,11 @@
 </template>
 
 <script setup>
-defineProps({
-  smallCard: [
-    {
-      type: Object,
-      required: true,
-    },
-  ],
+const props = defineProps({
+  smallCard: {
+    type: Array,
+    required: true,
+  },
 });
 </script>
 

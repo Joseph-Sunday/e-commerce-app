@@ -10,7 +10,11 @@ body {
 
 @layer components {
   .small-card {
-    @apply min-w-[100px] h-[80px];
+    @apply min-w-[70px] h-[80px];
+  }
+
+  .card {
+    @apply rounded-sm 
   }
 }
 
